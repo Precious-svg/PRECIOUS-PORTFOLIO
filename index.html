@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css"/>
+    
+  </head>
+  <body class="bg-[#121212] text-[#F8F9FA] w-full flex flex-col justify-around md:w-[75%] lg:w-[50%] md:mx-auto box-border gap-4">
+    <nav class="h-1/8 bg-[#1E293B] text-[#F8F9FA] flex flex-row justify-end items-center gap-4 pr-4 pb-6 pt-6 flex-none  ">
+        <a href="#" class="text-[17px] animation-fade-down px-2 hover:text-[#D4D4D8]">About</a>
+        <a href="#" class="text-[17px] animation-fade-down px-2 hover:text-[#D4D4D8]">Contact</a>
+        <a href="#" class="text-[17px] animation-fade-down px-2  hover:text-[#D4D4D8]">Projects</a>
+    </nav>
+
+    <main class="flex flex-col gap-8 w-full flex-1">
+        <div class="bg-[#FF6B6B] w-full p-4">
+            <div class="w-[300px] bg-[#333333] h-[300px] rounded-lg border-2 border-[#FF6B6B] mx-auto my-2 flex flex-col justify-around px-2 items-center" style="box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15), 0 4px 20px rgba(0, 0, 0, 0.1);">
+                <h3 class="text-xl text-justify">Hi There,  My Name is Precious Ogwezhi</h3>
+                <img src="./img/image.png " alt="girl with braids sticker" class="h-[150px] w-[150px] rounded-[50%]"/>
+                <span class="text-(--text-small)">Front-End Web Developer</span>
+            </div>
+            
+            <!-- Image with skills stack rotating aroound it for animation -->
+            
+            <p class="text-xl font-medium p-2" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.37), -2px -2px -4px rgba(0, 0, 0, 0.37), 4px 4px 8px rgba(0, 0, 0, 0.25);"> Let's make your projects a reality</p>
+            <button class="p-2 border-4 border-[#333333] mx-2 my-2 inset-shadow-l animation-bounce"><a href="public/PRECIOUS' RESUME.pdf" download="Precious_Resume.pdf" class="text-base">Download my resume!</a></button>
+        </div>
+        <div class="bg-[#E63946] text-white p-4 flex flex-col animation-appear">
+            <h2 class="text-xl  py-4">About Me...</h2> 
+            <p class="text-s mx-auto leading-8 ">
+                I am a Software Engineer who is proficient in HTML, CSS, Tailwind CSS, Javascript and React. I am very passionate about building and creating clean, accessible and user-friendly interfaces, engaging in activities that promote growth and contribute meaningfully to the software development field. My main hobby is reading, travelling and exploring new places. Currently my favorite book series is “A court Of Thorns and Roses” and a book titled "Stay with Me". 
+                I love a good challenge, so contact me for freelance, remote and full-time roles. I am open to working in an environment that fosters growth and critical thinking.
+                
+            </p>
+        </div>
+        <section class="w-[100%] bg-[#121212] p-4 m-2 animation-appear">
+            <h2 class="text-xl py-4 text-[#F8F9FA] font-bold">Projects</h2>
+            <p class="text-s pb-4 text-justify leading-8">I have been opportuned to work with amazing people and teams in the selected projects</p>
+           
+            <div class="flex scroll-smooth items-center overflow-x-auto px-4 gap-6 animation-appear">
+                <div class="bg-[#1E293B] mx-auto rounded-md h-[300px] w-full flex-none flex flex-col  justify-between px-4 pt-4 pb-6 items-center animation-fade-in-card transition-opacity delay-100" >
+                    <h2 class="text-(--text-large) text-[#F8F9FA]">Memory Game</h2> 
+                    <p class="text-(--text-small)">A Javascript based interactive memory game with animations</p>
+                    <a href="" class="">View Project</a>
+                </div>
+                <!-- Each project cards -->
+                <div class="bg-[#1E293B] mx-auto flex-none rounded-md h-[300px] w-full p-4 flex flex-col justify-between px-4 pt-4 pb-6 items-center animation-fade-in-card transition-opacity delay-100" >
+                    <h2 class="text-(--text-large) text-[#F8F9FA] p-2">Weather App</h2>
+                    <p class="text-(--text-small)">A weather app that shows real time weather in any loactio. It is built with javascript fetching weather data from an API</p>
+                    <a href="" class="">View Project</a>
+                </div>
+            </div>
+        
+        </section>
+        <div class="p-4 m-2 bg-[#121212] animation-appear">
+            <h3 class="text-xl py-4 font-bold text-[#F8F9FA]">Contact Me</h3>
+            <p class="text-s pb-4 text-justify leading-8">Let's make your project a reality. Feel free to contact me at any time</p>
+            <form action="https://formsubmit.co/pogwezhi@gmail.com" method="post">
+                <div class="mx-auto p-2">
+                    <label for="name"></label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required class="w-full h-[38px] rounded-md px-2"/>
+                </div>
+
+                <div class="mx-auto px-2 py-4">
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" required placeholder="Enter your email address" class="w-full h-[38px] rounded-md px-2"/>
+                </div>
+
+                <div class="mx-auto px-2 py-4">
+                    <label for="message"></label>
+                    <textarea class="w-full px-2 py-4 h-[200px] rounded-md" id="messgae" name="messgae" col="50" rows="4"placeholder="Type your message here..." autocomplete="on" autocorrect="on"></textarea>
+                </div>
+
+               
+                <div class="mx-auto px-2 py-4 " >
+                    <input type="submit" value="Send Message" class="border-2 border-[#8B5CF6] p-4 font-medium hover:button-shadow hover:bg-[#8B5CF6]"/>
+                </div>
+                
+            </form>
+        
+        </div>
+    </main>
+    <footer class=" w-full bg-[#1E293B] text-[#BOB3B8] p-4 mx-2">
+        
+        <!-- Instagram, github, email adress using their icons -->
+
+        <div class="flex justify-start items-center gap-4 py-2 m-2">
+            <a href="https://github.com/Precious-svg"><img src="./img/Github Logo PNG Vector (SVG) Free Download.jpg" alt="github logo and link" height="30px" width="30px"/></a>
+            <a href=""><img src="./img/Linkedin Png.jpg" alt="Linkedin icon and profile link" height="30px" width="30px"/></a>
+            <a href="https://twitter.com/Adaogwezhi"><img src="./img/twitter-icon.jpg" alt="twitter icon and profile link" height="30px" width="30px"/></a>
+            <a href="https://www.instagram.com/saph_hire/profilecard/?igsh=OGhvaTA0b3RIbWVn"><img src="./img/ Instagram icon.jpg" alt="instagram icon and profile link" height="30px" width="30px"/></a>
+        </div>
+         <div class="flex gap-2 justify-start">
+            <p class="text-s">Precious Ogwezhi</p>
+            <div class="bg-white-600 h-[20px] border-r-2 mx-2"></div>
+            <p class="text-s">Software Engineer</p>
+         </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+:root {
+    --color-black: #212121;
+    --color-darkBlue: #1E1E2E;
+    --text-small: 0.875rem;
+    --text-large: 1.125rem;
+  }
+
+  @keyframes fade-down{
+    0%{
+        transform: translateY(-35px) scale(0.7)
+    }
+
+    100%{
+        transform: translateY(0) scale(1)
+    }
+
+  }
+
+  .animation-fade-down{
+        animation: fade-down 0.5s ease-in forwards;
+    }
+    @keyframes appear{
+        0%{
+            transform: scale(0.8);
+            opacity:0.5;
+
+        }
+        100%{
+           transform: scale(1);
+           opacity: 1;
+            
+        }
+    }
+
+    .animation-appear{
+       animation: appear linear;
+       animation-timeline: view();
+       animation-range: entry;
+    }
+
+    /* animation for bouncing CTA button */
+
+    @keyframes bounce{
+        0%{
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+        }
+        50%{
+            transform: translateY(4px);
+            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.15);
+        }
+        100%{
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+        }
+    }
+
+    .animation-bounce{
+        animation: bounce 1s infinite;
+    }
+
+    @keyframes fade-in-card{
+        0%{
+            transform: scale(0.6);
+            opacity: 0.5;
+        }
+
+        100%{
+            transform: scale(1);
+            opacity: 1
+        }
+    }
+
+    .animation-fade-in-card{
+        animation: fade-in-card 1s ease-in forwards
+    }
+    .button-shadow {box-shadow: 6px 6px 10px rgb(28, 25, 23, 0.37), -3px -3px 4px rgb(228, 228, 231) 0.5}
